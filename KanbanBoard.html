@@ -51,6 +51,10 @@
     .add-card:hover {
       background-color: #0056b3;
     }
+    .button-container {
+      display: flex;
+      justify-content: center;
+    }
 
     .card {
       background: #f9f9f9;
@@ -66,17 +70,23 @@
   <div class="container">
     <div class="column" id="todo">
       <h2>To Do</h2>
-      <button class="add-card" onclick="addCard('todo')">+ Add Card</button>
+      <div class="button-container">
+        <button class="add-card" onclick="addCard('todo')">+ Add Card</button>
+      </div>
       <div id="todo-cards"></div>
     </div>
     <div class="column" id="inProgress">
       <h2>In Progress</h2>
-      <button class="add-card" onclick="addCard('inProgress')">+ Add Card</button>
+      <div class="button-container">
+        <button class="add-card" onclick="addCard('inProgress')">+ Add Card</button>
+      </div>
       <div id="inProgress-cards"></div>
     </div>
     <div class="column" id="done">
       <h2>Done</h2>
-      <button class="add-card" onclick="addCard('done')">+ Add Card</button>
+      <div class="button-container">
+        <button class="add-card" onclick="addCard('done')">+ Add Card</button>
+      </div>
       <div id="done-cards"></div>
     </div>
   </div>
